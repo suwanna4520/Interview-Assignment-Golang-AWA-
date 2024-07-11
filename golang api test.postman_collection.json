@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "16bf666d-af52-4038-a80b-fd0bff9d8c91",
+		"name": "golang api test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29695938"
+	},
+	"item": [
+		{
+			"name": "GetUserByID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/user/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\" : \"Suwanna\",\r\n    \"last_name\" : \"Mora\",\r\n    \"nick_name\":\"Benz\",\r\n    \"age\":22,\r\n    \"sex\":\"female\",\r\n    \"occupation\": \"Intarnship\",\r\n    \"salary\": 10000.00,\r\n    \"email\":\"Suwannamora2002@gmail.com\",\r\n    \"address\":\"42 M.16 Phai Rob Subdistrict, Pho Prathap Chang District, Phichit, 66190 \",\r\n    \"phone_number\":\"0830750342\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/user",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
